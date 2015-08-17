@@ -1,0 +1,7 @@
+composer.phar
+/vendor
+/build
+
+*.lock
+.idea/
+.sublime-*

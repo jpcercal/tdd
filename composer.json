@@ -1,0 +1,34 @@
+{
+    "name": "jpcercal/test-case",
+    "description": "PHPUnit TestCase",
+    "require": {
+        "php": "^5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "fabpot/php-cs-fixer": "^1.10"
+    },
+    "authors": [
+        {
+            "name": "João Paulo Cercal",
+            "email": "jpcercal@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cekurte\\Tdd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cekurte\\Tdd\\Test\\": "test/"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "post-install-cmd": [
+            "./bin/composer/scripts/post-install-cmd"
+        ]
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "name": "jpcercal/test-case",
+    "name": "cekurte/tdd",
     "description": "PHPUnit TestCase",
     "require": {
         "php": "^5.3"

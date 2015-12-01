@@ -3,5 +3,6 @@ composer.phar
 /build
 
 *.lock
+!composer.lock
 .idea/
 .sublime-*

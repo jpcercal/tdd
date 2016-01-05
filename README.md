@@ -11,9 +11,127 @@
 
 ## Installation
 
-The package is available on [Packagist](http://packagist.org/packages/cekurte/tdd).
-Autoloading is [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) compatible.
+- The package is available on [Packagist](http://packagist.org/packages/cekurte/tdd).
+- The source files is [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) compatible.
+- Autoloading is [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) compatible.
 
 ```shell
 composer require cekurte/tdd
 ```
+
+**If you liked of this library, give me a *star =)*.**
+
+## Documentation
+
+This library was created to permit that developers write php unit tests using a common base class, including initially the following tasks:
+
+- Set a private, protected or public property value;
+- Get a private, protected or public property value;
+- Call a private, protected or public method.
+
+### Setting a property value
+
+To set a property value (independently of your visibility) you can use the method [ReflectionTestCase::propertySetValue](https://github.com/cekurte/tdd/blob/master/src/ReflectionTestCase.php#L34) like the following example:
+
+```php
+<?php
+
+namespace Your\Namespace;
+
+use Cekurte\Tdd\ReflectionTestCase;
+
+class YourClassTest extends ReflectionTestCase
+{
+    public function testAnything()
+    {
+        // Instance of a class that has one
+        // private property named "yourPrivateProperty".
+        $instance = new YourClass();
+
+        // Set the value "newValue" to the property
+        // "yourPrivateProperty".
+        $this->propertySetValue(
+            $instance,
+            'yourPrivateProperty',
+            'newValue'
+        );
+
+        // ...
+    }
+}
+```
+
+### Getting a property value
+
+To get a property value (independently of your visibility) you can use the method [ReflectionTestCase::propertyGetValue](https://github.com/cekurte/tdd/blob/master/src/ReflectionTestCase.php#L53) like the following example:
+
+```php
+<?php
+
+namespace Your\Namespace;
+
+use Cekurte\Tdd\ReflectionTestCase;
+
+class YourClassTest extends ReflectionTestCase
+{
+    public function testAnything()
+    {
+        // Instance of a class that has one
+        // private property named "yourPrivateProperty".
+        $instance = new YourClass();
+
+        // Get the value of the property
+        // "yourPrivateProperty".
+        $currentValue = $this->propertyGetValue(
+            $instance,
+            'yourPrivateProperty'
+        );
+
+        // ...
+    }
+}
+```
+
+### Calling a method
+
+To call a method (independently of your visibility) you can use the method [ReflectionTestCase::invokeMethod](https://github.com/cekurte/tdd/blob/master/src/ReflectionTestCase.php#L16) like the following example:
+
+```php
+<?php
+
+namespace Your\Namespace;
+
+use Cekurte\Tdd\ReflectionTestCase;
+
+class YourClassTest extends ReflectionTestCase
+{
+    public function testAnything()
+    {
+        // Instance of a class that has one
+        // private property named "yourPrivateMethod".
+        $instance = new YourClass();
+
+        // Call the method
+        // "yourPrivateMethod".
+        $valueReturned = $this->invokeMethod(
+            $instance,
+            'yourPrivateMethod',
+            ['param1', 'param2', 'paramN']
+        );
+
+        // ...
+    }
+}
+```
+
+Contributing
+------------
+
+1. Give me a star **=)**
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Make your changes
+4. Run the tests, adding new ones for your own code if necessary (`vendor/bin/phpunit`)
+5. Commit your changes (`git commit -am 'Added some feature'`)
+6. Push to the branch (`git push origin my-new-feature`)
+7. Create new Pull Request

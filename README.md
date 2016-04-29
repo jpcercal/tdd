@@ -1,9 +1,10 @@
 # Cekurte\TDD
 
-[![Build Status](https://img.shields.io/travis/jpcercal/cekurte-tdd/master.svg?style=flat-square)](http://travis-ci.org/jpcercal/cekurte-tdd)
-[![Coverage Status](https://coveralls.io/repos/jpcercal/cekurte-tdd/badge.svg)](https://coveralls.io/r/jpcercal/cekurte-tdd)
-[![Latest Stable Version](https://img.shields.io/packagist/v/cekurte/tdd.svg?style=flat-square)](https://packagist.org/packages/cekurte/tdd)
-[![License](https://img.shields.io/packagist/l/cekurte/tdd.svg?style=flat-square)](https://packagist.org/packages/cekurte/tdd)
+[![Build Status](https://img.shields.io/travis/cekurte/tdd/master.svg?style=square)](http://travis-ci.org/cekurte/tdd)
+[![Code Climate](https://codeclimate.com/github/jpcercal/cekurte-tdd/badges/gpa.svg)](https://codeclimate.com/github/jpcercal/cekurte-tdd)
+[![Coverage Status](https://coveralls.io/repos/github/cekurte/tdd/badge.svg?branch=master)](https://coveralls.io/github/cekurte/tdd?branch=master)
+[![Latest Stable Version](https://img.shields.io/packagist/v/cekurte/tdd.svg?style=square)](https://packagist.org/packages/cekurte/tdd)
+[![License](https://img.shields.io/packagist/l/cekurte/tdd.svg?style=square)](https://packagist.org/packages/cekurte/tdd)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/26db2ab3-e452-4267-9742-2e0cac04f765/mini.png)](https://insight.sensiolabs.com/projects/26db2ab3-e452-4267-9742-2e0cac04f765)
 
 - Just a simple extension to the PHPUnit library.

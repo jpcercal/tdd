@@ -1,14 +1,14 @@
 # Cekurte\TDD
 
-[![Build Status](https://img.shields.io/travis/cekurte/tdd/master.svg?style=square)](http://travis-ci.org/cekurte/tdd)
-[![Code Climate](https://codeclimate.com/github/jpcercal/cekurte-tdd/badges/gpa.svg)](https://codeclimate.com/github/jpcercal/cekurte-tdd)
-[![Coverage Status](https://coveralls.io/repos/github/cekurte/tdd/badge.svg?branch=master)](https://coveralls.io/github/cekurte/tdd?branch=master)
+[![Build Status](https://img.shields.io/travis/jpcercal/tdd/master.svg?style=square)](http://travis-ci.org/jpcercal/tdd)
+[![Code Climate](https://codeclimate.com/github/jpcercal/tdd/badges/gpa.svg)](https://codeclimate.com/github/jpcercal/tdd)
+[![Coverage Status](https://coveralls.io/repos/github/jpcercal/tdd/badge.svg?branch=master)](https://coveralls.io/github/jpcercal/tdd?branch=master)
 [![Latest Stable Version](https://img.shields.io/packagist/v/cekurte/tdd.svg?style=square)](https://packagist.org/packages/cekurte/tdd)
 [![License](https://img.shields.io/packagist/l/cekurte/tdd.svg?style=square)](https://packagist.org/packages/cekurte/tdd)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/26db2ab3-e452-4267-9742-2e0cac04f765/mini.png)](https://insight.sensiolabs.com/projects/26db2ab3-e452-4267-9742-2e0cac04f765)
 
 - Just a simple extension to the PHPUnit library.
-- Currently this package contains only support for one TestCase scenario [ReflectionTestCase](https://github.com/jpcercal/cekurte-tdd/blob/master/src/ReflectionTestCase.php) **contribute with this project**!
+- Currently this package contains only support for one TestCase scenario [ReflectionTestCase](https://github.com/jpcercal/tdd/blob/master/src/ReflectionTestCase.php) **contribute with this project**!
 
 ## Installation
 
@@ -32,7 +32,7 @@ This library was created to permit that developers write php unit tests using a 
 
 ### Setting a property value
 
-To set a property value (independently of your visibility) you can use the method [ReflectionTestCase::propertySetValue](https://github.com/cekurte/tdd/blob/master/src/ReflectionTestCase.php#L34) like the following example:
+To set a property value (independently of your visibility) you can use the method [ReflectionTestCase::propertySetValue](https://github.com/jpcercal/tdd/blob/master/src/ReflectionTestCase.php#L34) like the following example:
 
 ```php
 <?php
@@ -64,7 +64,7 @@ class YourClassTest extends ReflectionTestCase
 
 ### Getting a property value
 
-To get a property value (independently of your visibility) you can use the method [ReflectionTestCase::propertyGetValue](https://github.com/cekurte/tdd/blob/master/src/ReflectionTestCase.php#L53) like the following example:
+To get a property value (independently of your visibility) you can use the method [ReflectionTestCase::propertyGetValue](https://github.com/jpcercal/tdd/blob/master/src/ReflectionTestCase.php#L53) like the following example:
 
 ```php
 <?php
@@ -95,7 +95,7 @@ class YourClassTest extends ReflectionTestCase
 
 ### Calling a method
 
-To call a method (independently of your visibility) you can use the method [ReflectionTestCase::invokeMethod](https://github.com/cekurte/tdd/blob/master/src/ReflectionTestCase.php#L16) like the following example:
+To call a method (independently of your visibility) you can use the method [ReflectionTestCase::invokeMethod](https://github.com/jpcercal/tdd/blob/master/src/ReflectionTestCase.php#L16) like the following example:
 
 ```php
 <?php
